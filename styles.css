@@ -35,6 +35,11 @@ html {
     text-transform:uppercase;
 }
 
+.links {
+    margin-top:-30px;
+}
+
+
 .color {
     animation: changeColor 10s infinite;
 }
@@ -76,10 +81,15 @@ h1,h2 {
     margin:15px; 
 }
 
+.landing span {
+    font-size:1.5rem;
+    margin-top:15px;
+}
+
 .gallery {
     background-color:var(--clr-background-light);
     width:100%;
-    height:110vh;
+    height:120vh;
     padding:50px;
 }
 
@@ -208,22 +218,119 @@ footer p{
     transition:0.19s;
 }
 
- @media screen and (max-width:430px) {
-    .card {
-        width:100vw;
-    }
-    .card h1 {
-        padding:10px;
-    }
+.projects {
+    background-color:var(--clr-background-light);
+    width:100%;
+    height:120vh;
 }
- @media screen and (min-width:530px) {
-     .card {
-         width:50vw;
-     }
- }
 
-@media screen and (max-width:720px) {
+.projects h1 {
+    margin-bottom:50px;
+}
+
+.cards-container {
+    display:flex;
+    flex-direction:row;
+}
+
+.cards {
+    background-color:rgb(36, 36, 36);
+    margin:0 40px;
+    border-radius:20px;
+    height:66vh;
+    width:50%;
+}
+
+.cards img {
+    width:100%;
+    height:230px;
+    z-index:1;
+    border-radius:10px;
+}
+
+.cards h2 {
+    font-size:1.5rem;
+    padding:20px 30px;
+    text-align:left;
+}
+
+.cards p {
+    font-size:15px;
+    padding:0 30px;
+}
+
+.techs {
+    display:flex;
+    flex-direction:row;
+}
+
+.techs h6{
+    padding:10px;
+    margin-left:20px;
+    background-color:var(--clr-background-light);
+    border-radius:10px;
+}
+
+@media screen and (max-width:600px) {
+    .landing .color {
+        font-size:1.5rem;
+    }
+
+    .landing .info {
+        padding:0 10px;
+    }
+
+    .gallery {
+        height:190vh;
+    }
+
+    .projects {
+        height:270vh;
+    }
+
+    .cards-container {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .cards {
+        width:80vw;
+        height:65vh;
+        margin-bottom:5rem;
+    }
+    
+    #coyo {
+        height:60vh;
+    }
+    
+
+    .cards img {
+        height:180px;
+    }
+
+    .cards h2 {
+        font-size:1.5rem;
+        padding:10px 15px;
+    }
+
+    .cards p {
+        font-size:0.9rem;
+        padding:0 15px;
+    }
+
+    .techs {
+        margin:-5px -10px;
+    }
+
+    .techs h6{
+        font-size:0.9rem;
+    }
+
     .card {
         width:90vw;
+    }
+
+    .card p {
+        padding:0 20px;
     }
 }
