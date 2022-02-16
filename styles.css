@@ -271,6 +271,12 @@ footer p{
     border-radius:10px;
 }
 
+.techs h6:hover {
+    background-color:var(--clr-secondary);
+    color:var(--clr-background);
+    transition:0.3s;
+}
+
 @media screen and (max-width:420px) {
     .landing .color {
         font-size:1.5rem;
