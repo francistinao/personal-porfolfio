@@ -35,6 +35,11 @@ html {
     text-transform:uppercase;
 }
 
+.info span {
+    font-size:10px;
+    padding:20px 0px;
+}
+
 .links {
     margin-top:-30px;
 }
@@ -75,7 +80,7 @@ h1,h2 {
     align-items:center;
 }
 
-.profile {
+.avatar {
     width:250px;
     border-radius:20px;
     margin:15px; 
@@ -115,6 +120,11 @@ h1,h2 {
     transform:scale(1.1);
 }
 
+.links {
+    display:flex;
+    flex-direction:space-between;
+}
+
 .fa {
     padding: 15px;
     font-size: 30px;
@@ -122,9 +132,19 @@ h1,h2 {
     text-align: center;
     text-decoration: none;
     border-radius:100%;
-    display:flex;
-    flex-direction:space-between;
     margin:50px 5px;
+}
+
+
+.fa-brands {
+    padding: 13px;
+    font-size: 23px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:100%;
+    position:relative;
+    top:3.5px;
 }
 
 .fa-facebook {
@@ -146,6 +166,18 @@ h1,h2 {
 .fa-linkedin {
     background: var(--clr-secondary);
     color:var(--clr-primary);
+}
+
+.fa-github {
+    background: var(--clr-secondary);
+    color:var(--clr-primary);
+}
+
+.fa-brands:hover {
+    background:var(--clr-primary);
+    color:var(--clr-background);
+    transition: 0.5s;
+    text-decoration:none;
 }
 
 .fa:hover {
@@ -171,7 +203,7 @@ footer p{
 .contact {
     background-color:var(--clr-background-light);
     width:100%;
-    height:50vh;
+    height:60vh;
 }
 
 .card {
@@ -196,7 +228,7 @@ footer p{
 }
 
 .card p{
-    padding:0 100px;
+    padding:0 30px;
     margin-bottom:25px;
  }
 
@@ -221,7 +253,7 @@ footer p{
 .projects {
     background-color:var(--clr-background-light);
     width:100%;
-    height:140vh;
+    height:185vh;
 }
 
 .projects h1 {
@@ -229,21 +261,21 @@ footer p{
 }
 
 .cards-container {
-    display:flex;
-    flex-direction:row;
+    padding:40px;
+    display:grid;
+    grid-template-columns:repeat(3,0.5fr);
+    grid-column-gap:40px;
+    grid-row-gap: 40px;
+    z-index:1;
 }
 
 .cards {
     background-color:rgb(36, 36, 36);
-    margin:0 40px;
     border-radius:20px;
-    height:66vh;
-    width:50%;
 }
 
 .cards img {
     width:100%;
-    height:230px;
     z-index:1;
     border-radius:10px;
 }
@@ -320,12 +352,29 @@ footer p{
         margin:-40px 0;
     }
 
+    .info p {
+        font-size:30px;
+    }
+
     .gallery {
         height:190vh;
     }
 
+    .profile {
+        padding:0 40px;
+    }
+    
+    .profile p {
+        font-size:20px;
+    }
+ 
+    .profile p span {
+        font-size:20px;
+    }
+    
+
     .projects {
-        height:270vh;
+        height:380vh;
     }
 
     .cards-container {
@@ -340,15 +389,23 @@ footer p{
     }
     
     #hygieia {
-        height:62vh;
+        height:66vh;
     }
 
     #furashizu {
-        height:62vh;
+        height:66vh;
     }
 
     #coyo {
-        height:62vh;
+        height:66vh;
+    }
+
+    #speedee {
+        height:57vh;
+    }
+
+    .contact {
+        height:70vh;
     }
     
 
