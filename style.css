@@ -196,6 +196,7 @@
         font-size:15px;
         line-height: 20px;
         margin:25px 0px;
+        overflow-y: hidden;
     }
 
     .welcome-section b { 
