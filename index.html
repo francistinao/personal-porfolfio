@@ -21,6 +21,8 @@
     <title>Francis Tin-ao</title>
 </head>
 <body>
+    <div id="preloader"></div>
+    
     <section class="landing" id="landing">
         <h1 class="hover-state"><a href="#landing">🡱</a></h1>
         <div class="container">
@@ -224,5 +226,12 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init(); //AOS Animate on Scroll Library
+</script>
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function() {
+        loader.style.display  = "none";
+    })
 </script>
 </html>
