@@ -146,6 +146,7 @@
 
     .hamburger.is-active:hover span {
         background-color:var(--clr-primary);
+        position: absolute;
         z-index:99;
     }
 
