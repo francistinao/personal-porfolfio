@@ -11,8 +11,11 @@
 </ul>
 
 <hr>
-<h3>Additional add-ons</h3>
+<h3>Add-ons scripts</h3>
 <ul>
   <li>Animation on Scroll animations</li>
   <li>Preloader</li>
 </ul>
+
+<hr>
+<h6>Made with ❤️ by Francis Tin-ao</h6>
