@@ -48,8 +48,7 @@
     }
   
     body::-webkit-scrollbar-track {
-        width:0px;
-        background-color: transparent;  
+        background: rgba(0, 0, 0, 0.2);
     }
   
     body::-webkit-scrollbar-thumb {
