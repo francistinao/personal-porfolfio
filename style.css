@@ -49,7 +49,6 @@
   
     body::-webkit-scrollbar-track {
         opacity:1;
-        background: #000;
     }
   
     body::-webkit-scrollbar-thumb {
