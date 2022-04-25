@@ -48,7 +48,7 @@
     }
   
     body::-webkit-scrollbar-track {
-        background: transparent;  
+        background: none;  
     }
   
     body::-webkit-scrollbar-thumb {
