@@ -641,7 +641,7 @@
     .contacts {
         width:100vw;
         height:80vh;
-        background-color:var(--clr-light);
+        background-color:F7F7F7;
         overflow-y: hidden;
     }
 
