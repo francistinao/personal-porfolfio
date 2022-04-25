@@ -43,6 +43,19 @@
         color:#ffffff;
     }
 
+    body::-webkit-scrollbar {
+        width: 12px;          
+    }
+  
+    body::-webkit-scrollbar-track {
+        background: transparent;  
+    }
+  
+    body::-webkit-scrollbar-thumb {
+        background-color: #0368ff;    
+        border-radius: 20px;   
+    }
+
      #preloader {
         background:#000 url(images/loader.gif) no-repeat center center;
         background-size: 100%; 
