@@ -903,7 +903,7 @@
     nav {
         position: absolute;
         display: flex;
-        gap:30%;
+        gap:35%;
     }
 
     .hamburger {
