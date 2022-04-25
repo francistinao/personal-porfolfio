@@ -49,6 +49,7 @@
   
     body::-webkit-scrollbar-track {
         opacity:1;
+        background-color: transparent;
     }
   
     body::-webkit-scrollbar-thumb {
