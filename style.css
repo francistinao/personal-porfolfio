@@ -46,7 +46,7 @@
     body::-webkit-scrollbar {
         width: 4px;
         height: 4px;
-        border: 1px solid transparent;          
+        border: 1px solid transparent;        
     }
   
     body::-webkit-scrollbar-track {
@@ -57,6 +57,7 @@
     body::-webkit-scrollbar-thumb {
         background-color: #0368ff;    
         border-radius: 30px;   
+        cursor: grab;  
     }
 
      #preloader {
@@ -82,16 +83,18 @@
         border-radius:10px;
         padding:10px 15px;
         display: none;
+
     }
 
     .hover-state a {
         text-decoration: none;
-        color:#ffffff;
+        color:#fff;
     }
 
     .landing {
         background:var(--clr-dark);
         background-image:url(images/background.svg);
+        background-size: cover;
         background-repeat: no-repeat;
         width:100vw;
         height:100vh;
@@ -400,6 +403,7 @@
     background-color:var(--clr-dark);
     background-image:url(images/background-two.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .into h2 {
@@ -592,6 +596,8 @@
     background-color:var(--clr-dark);
     background-image:url(images/background-two.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:color-dodge;
     overflow-y: hidden;
 }
 
@@ -657,7 +663,7 @@
     .contacts {
         width:100vw;
         height:80vh;
-        background-color:F7F7F7;
+        background-color:rgb(8, 8, 8);
         overflow-y: hidden;
     }
 
@@ -1036,3 +1042,4 @@
         margin-top:25%;
     }
 }
+
