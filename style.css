@@ -493,7 +493,7 @@
 /* Beginning of Projects Page */
 .projects {
     width:100vw;
-    height:290vh;
+    height:330vh;
     background-color:var(--clr-dark);
     overflow: hidden;
 }
@@ -794,7 +794,7 @@
     }
 
     .projects {
-        height: 360vh;
+        height: 420vh;
     }
 
     .project img {
@@ -996,7 +996,7 @@
     }
 
     .projects {
-        height: 360vh;
+        height: 420vh;
     }
 
     .proj-deets p {
