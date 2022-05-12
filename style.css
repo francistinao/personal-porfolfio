@@ -44,17 +44,19 @@
     }
 
     body::-webkit-scrollbar {
-        width: 12px;          
+        width: 4px;
+        height: 4px;
+        border: 1px solid transparent;          
     }
   
     body::-webkit-scrollbar-track {
-        opacity:1;
-        background-color: transparent;
+        border-radius:30px;
+        background-color: rgb(0,0,0);
     }
   
     body::-webkit-scrollbar-thumb {
         background-color: #0368ff;    
-        border-radius: 20px;   
+        border-radius: 30px;   
     }
 
      #preloader {
