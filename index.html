@@ -54,7 +54,7 @@
             </nav>
 
             <div class="welcome-section">
-                <h1 data-aos="fade-right">function<span> developer()</span>{<br><span>codingiswhatido();</span><br></h1>
+                <h1 data-aos="fade-right">function<span> developer()</span>{<br><span class="auto-input"></span><br></h1>
                 <h1 data-aos="fade-right" class ="special-bracket">}</h1>
                 <p data-aos="fade-right" data-aos-delay="200">A <b>second-year Bachelor of Science in Information Technology student</b> who 🤍 to <b>develop different kinds of software and websites.</b></p>
             </div>
@@ -132,16 +132,16 @@
     <section class="stack">
         <div class="container">
             <h1 id="stack">TECHNOLOGY STACK<sup>●</sup></h1>
-            <p>These are the technologies that I'm compatible with and also practicing on the rest</p>
                 <div class="stack-grid">
-                    <img src="images/c++.png" alt="">
-                    <img src="images/html_5.png" alt="">
-                    <img src="images/css_3.png" alt="">
-                    <img src="images/js.png" alt="">
-                    <img src="images/npm.png" alt="">
-                    <img src="images/git.png" alt="">
-                    <img src="images/adobe_photoshop.png" alt="">
-                    <img src="images/figma.png" alt="">
+                    <img src="images/c.png" alt="C Language Logo">
+                    <img src="images/c++.png" alt="C++ Language Logo">
+                    <img src="images/html_5.png" alt="HTML 5 Logo">
+                    <img src="images/css_3.png" alt="CSS 3 Logo">
+                    <img src="images/js.png" alt="JavaScript Logo">
+                    <img src="images/npm.png" alt="Node Package Manager Logo">
+                    <img src="images/git.png" alt="Git Logo">
+                    <img src="images/adobe_photoshop.png" alt="Photoshop Logo">
+                    <img src="images/figma.png" alt="Figma Logo">
                 </div>
         </div>
     </section>
@@ -150,8 +150,6 @@
     <section class="projects">
         <div class="container">
             <h1  id="project">PROJECTS<sup>●</sup></h1>
-            <p>These are the projects I developed so far in my career:</p>
-            
             <div class="project-container">
                 <div class="project" data-aos="zoom-in-left">
                     <img src="images/hygieia.jpg">
@@ -250,6 +248,7 @@
     </section>
 </body>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init(); //AOS Animate on Scroll Library
@@ -260,5 +259,14 @@
     window.addEventListener("load", function() {
         loader.style.display  = "none";
     })
+</script>
+<script>
+    var typed = new Typed(".auto-input", {
+        strings: ["codingIsLife();","hustleHard();","problemSolver();","moreCoffee();","attentionToDetail();","handsome();"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        smartBackspace: true,
+        loop: true
+    });
 </script>
 </html>

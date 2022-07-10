@@ -495,6 +495,11 @@
     grid-row-gap: 20px;
 }
 
+.stack-grid > img:first-child {
+    height:115px;
+    width:100px;
+}
+
 .stack img:hover {
     transform:scale(0.9);
     transition:0.2s;
@@ -710,6 +715,11 @@
 
     .special-bracket {
         margin-left: 9rem;
+    }
+
+    .stack-grid > img:first-child {
+        height:100px;
+        width:100px;
     }
 }
 
