@@ -627,11 +627,6 @@
     flex-direction: column;
 }
 
-.graphic-container img {
-    margin:20px 0;
-}
-
-
 .graphic-details h1 {
     margin-top:20px;
     font-size:25px;
@@ -938,6 +933,13 @@
             flex-direction: row-reverse;
             gap:50px;
         }
+
+        .graphic-container img {
+            width:45%;
+            position: relative;
+            bottom:50px;
+        }
+        
 
         .graphic-details {
             width:50%;
