@@ -52,12 +52,14 @@
     
     body {
         color:#ffffff;
+        cursor: pointer;
     }
 
     body::-webkit-scrollbar {
         width: 4px;
         height: 4px;
         border: 1px solid transparent;        
+        cursor: grab;  
     }
   
     body::-webkit-scrollbar-track {
@@ -68,7 +70,6 @@
     body::-webkit-scrollbar-thumb {
         background-color: var(--clr-light);  
         border-radius: 30px;   
-        cursor: grab;  
     }
 
      #preloader {
@@ -94,13 +95,73 @@
         border-radius:10px;
         padding:10px 15px;
         display: none;
-
     }
 
     .hover-state a {
         text-decoration: none;
         color:var(--clr-very-dark);
     }
+
+    .cursor {
+        width:50px;
+        height: 50px;
+        border: 2px solid var(--clr-primary);
+        border-radius:100%;
+        position: absolute;
+        transition-duration: 400ms;
+        transition-timing-function: ease-out;
+        animation:cursorMagic1 .5s infnite alternate;
+        z-index:10;
+    }
+
+    .cursor::after {
+        content:"";
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        border: 8px solid var(--clr-light);
+        border-radius:50%;
+        opacity: 0.9;
+        animation: cursorMagic .5s infinite alternate;
+    }
+
+    @keyframes cursorMagic1 {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(.7);
+        }
+    }
+
+    @keyframes cursorMagic {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(.4);
+        }
+    }
+
+    .expand {
+        animation: cursorMagic3 .5s forwards;
+        border: 3px solid var(--clr-primary);
+    }
+
+    @keyframes cursorMagic3 {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(3);
+        }100% {
+            tranform: scale(1);
+            opacity: 0;
+        }
+    }
+    
+    
+
 
     .landing {
         background:var(--clr-semi-dark);
@@ -412,8 +473,9 @@
     text-align: center;
     text-decoration: none;
     color:var(--clr-primary);
-    background-color:var(--clr-dark);
     cursor: pointer;
+    position: relative;
+    z-index:10;
 }
 
 
